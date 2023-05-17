@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/midiaq.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <main>
@@ -16,8 +18,24 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja Bem-Vindo. Faça login para Acessar !</p>
-                <form action="arquivo" method="post">
-                    
+                <form action="arquivo" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined" >
+                            person
+                            </span>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu Email" autocomplete="email" required maxlength="30">
+                        <label for="ilogin">login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            vpn_key
+                            </span>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua Senha" autocomplete="current-password" required minlength="8">
+                        <label for="isenha">senha</label>
+
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">Esqueci a Senha <span class="material-symbols-outlined">mail</span></a>
                 </form>
 
             </div>
